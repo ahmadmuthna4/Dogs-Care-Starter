@@ -1,0 +1,277 @@
+/* all  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+   
+    --red-color: rgb(248, 90, 64);
+    --black-color: black;
+    
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    
+    
+} 
+.part-section {
+    text-align: center;
+    margin-top: 69px;
+    margin-bottom: 65px;
+}
+
+.part-section h3 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.part-section p {
+    font-size: 18px;
+    width: 70%;
+    margin: auto;
+    color: #a79c9c;
+}
+
+/* start navba */
+nav{
+    width: 100%;
+    background-color: transparent;
+    position: fixed !important;
+    z-index: 111;
+    transition: all 0.5s;
+}
+.up {
+    position: fixed;
+    bottom: 10px;
+    left: -50px;
+    background-color: var(--red-color);
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.up.show {
+    left: 23px;
+    transition: all 0.5s;
+}
+
+.up.show:hover {
+    background-color: var(--main-color-border);
+    color: var(--color-text);
+}
+nav .fa-paw{
+    color: var(--red-color);
+}
+nav .navbar-toggler{
+    border: 0;
+}
+nav .navbar-toggler i{
+    font-size: 28px;
+    color: beige;
+    
+}
+nav .navbar-collapse{
+    /* background-color: dimgrey; */
+    padding: 14px;
+}
+nav .logo{
+    font-size: 27px;
+    color: white !important;
+    
+}
+nav .list .dropdown-menu{
+    background-color: dimgrey;
+}
+nav .list .dropdown-menu{
+    margin-right: 20px;
+    font-weight: bold;
+}
+nav .list li a{
+    color: white !important;
+        
+}
+nav form{
+    max-height: 41px;
+    /* width: 35%; */
+    outline: none;
+    position: relative;
+}
+nav form i{
+    position: absolute;
+    top: 9px;
+    right: 21px;
+    transform: translate(-19px, 3px);
+}
+@media  (max-width: 992px) {
+        nav .navbar-collapse {
+            background-color: dimgrey;
+        }
+}
+/* end navba */
+/* start banar */
+.banar{
+    background-image: url("../images/banner1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+.banar .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#00000066;
+}
+.banar .content{
+    transform: translate(0px, 196px);
+}
+.banar .content h3{
+    color: azure;
+    font-size: 45px;
+    margin-bottom: 25px;
+    font-weight: 100;
+}
+.banar .content h3 span{
+    font-weight: bold;
+}
+.banar .content p{
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: azure;
+   
+}
+
+/* end banar */
+/* start about  */
+.about{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.about i{
+    font-size: 35px;
+    color: var(--red-color);
+}
+/* end about  */
+/* start we do  */
+.we-do{
+    background-color: #f7f7f796;
+    padding-top: 1px;
+}
+.we-do .row{
+    padding-bottom: 50px;
+}
+.we-do .card:hover{
+    transition: all 0.5s;
+}
+.we-do .card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.we-do .card a{
+    color: var(--red-color);
+    font-weight: bold;
+}
+/* end we do  */
+/* start customers */
+.customers {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.customers .content-icon{
+    position: relative;
+}
+.customers  i{
+        font-size: 30px;
+    color: var(--red-color);
+}
+.customers  span{
+   font-weight: bold;
+   color :var(--black-color);
+}
+.customers .side-right img {
+   border-radius: 50%;
+}
+.customers .side-right .quote {
+    transform: translate(75px, -51px);
+        width: 80%;
+}
+.customers .side-right .quote p {
+    color: var(--red-color);
+    font-weight: bold;
+}
+.customers q::before {
+    font-size: 50px;
+    color: var(--red-color);
+    font-family: initial;
+    line-height: .8;
+    padding-top: 8px;
+    display: inline-block;
+}
+/* end customers */
+/* start galary */
+.galary{
+    background-color: #f7f7f796;
+    padding-top: 1px;
+    padding-bottom: 100px;
+
+}
+.galary .row img:hover{
+filter: drop-shadow(2px 4px 6px var(--black-color));
+
+}
+/* end galary */
+/* start services  */
+.services {
+    padding-top: 50px;
+}
+.services i{
+    font-size: 25px;
+    color: var(--red-color);
+}
+@media (max-width: 768px) {
+.services {
+        padding-top: 0;
+    }
+}
+/* end services  */
+/* start news  */
+.news .card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.news .card span{
+    position: absolute;
+    right: 20px;
+    color: var(--red-color);
+}
+.news .card h5{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+/* end news  */
+
+/* start footer  */
+
+
+.footer {
+    background-color: var(--black-color);
+}
+.footer .logo {
+    font-size: 36px;
+    color: var(--red-color);
+}
+/* end footer  */
